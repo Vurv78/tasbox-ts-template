@@ -1,0 +1,7 @@
+{
+    "extends": "./tsconfig.json",
+    "tstl": {
+        "luaBundle": "client/index.luau",
+        "luaBundleEntry": "src/client/index.ts",
+    }
+}

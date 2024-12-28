@@ -1,0 +1,20 @@
+{
+  "name": "tasbox-ts-template",
+  "scripts": {
+    "build": "bun run build:client && bun run build:server",
+    "build:client": "tstl -p ./tsconfig.client.json",
+    "build:server": "tstl -p ./tsconfig.server.json",
+    "lint": "biome lint",
+    "format": "biome format --write ./src"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@types/bun": "latest",
+    "typescript-to-lua": "Vurv78/TypeScriptToLua#luau",
+    "lua-types": "^2.13.1",
+    "tb-types": "git@github.com:tb-wired/tb-types.git"
+  },
+  "peerDependencies": {
+    "typescript": "^5.7.2"
+  }
+}
